@@ -25,3 +25,18 @@ What is IEnumerable?
   b. MoveNext-: Advances the enumerator to the next element of the collection.It is boolean type. It the enumerator reach at the end it returns false otherwise true.
   c. Reset-: Sets the enumerator to its initial position, which is before the first element in the collection.
   
+  What is IQueryable?
+  1. IQueryable is also an interface.
+  2. IQueryable is a child class of IEnumerable.It means we can assigned IQuerable refrence to IEnumerable type variable.
+  3. IQueryable interface contains:
+   1.1 Expression
+   1.2 Type
+   1.3 IQueryProvider: IQueryable contains a property of type IQueryProvider which is used in LinqProviders.
+  4. It is the best choice for other data providers (linq to entities etc...)
+  
+  What is IQueryProvider?
+  1. IQueryProvider is also an interface.
+  2. It is used to create and execute the query.
+   
+  
+  
